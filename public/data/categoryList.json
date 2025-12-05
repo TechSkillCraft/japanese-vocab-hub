@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Nouns",
+    "folder": "nouns",
+    "file": "nouns.json",
+    "image": " "
+  },
+  {
+    "id": 2,
+    "name": "Verbs",
+    "folder": "verbs",
+    "file": "verbs.json",
+    "image": " "
+  },
+  {
+    "id": 3,
+    "name": "Adjectives",
+    "folder": "adjectives",
+    "file": "adjectives.json",
+    "image": " "
+  },
+  {
+    "id": 4,
+    "name": "Phrases",
+    "folder": "phrases",
+    "file": "phrases.json",
+    "image": " "
+  }
+]

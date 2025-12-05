@@ -1,0 +1,127 @@
+/* 🌟 Word Card */
+.word-card {
+  width: 150px; /* fixed width */
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+/* Hover scale */
+.word-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+/* Image wrapper */
+.word-img-wrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Image */
+.word-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+
+/* English meaning overlay */
+.word-en-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Speak Button */
+.word-audio-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
+}
+
+.word-audio-btn:hover {
+  transform: scale(1.15);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Text content below image */
+.word-content {
+  padding: 4px;
+  text-align: center;
+}
+
+.word-jp {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2px 0;
+  color: #fff;
+}
+
+.word-romaji {
+  font-size: 12px;
+  color: #eee;
+  margin: 1px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* default 5 columns */
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Large tablets / small screens */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+}
+
+/* Tablets / medium screens */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* Mobile / small screens */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+  }
+}

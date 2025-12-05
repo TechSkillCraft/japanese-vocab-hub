@@ -1,0 +1,14 @@
+.category-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Greetings",
+    "description": "Basic greetings in Japanese"
+  },
+  {
+    "id": "2",
+    "title": "At the Restaurant",
+    "description": "Ordering food and drinks"
+  },
+  {
+    "id": "3",
+    "title": "Shopping",
+    "description": "Conversations while shopping"
+  },
+  {
+    "id": "4",
+    "title": "Travel",
+    "description": "Asking directions and traveling"
+  }
+]

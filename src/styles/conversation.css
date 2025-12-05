@@ -1,0 +1,123 @@
+.conv-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.conv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.speak-all-btn {
+  padding: 8px 14px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.speak-all-btn:hover {
+  background: #45a049;
+}
+
+.conv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* WhatsApp-style chat bubbles */
+.conv-card {
+  display: flex;
+  align-items: flex-start;
+  max-width: 70%;
+  padding: 12px;
+  border-radius: 18px;
+  position: relative;
+  background: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.conv-card.left {
+  margin-right: auto;
+  background: #2575fc;
+  color: white;
+  border-top-left-radius: 0;
+}
+
+.conv-card.right {
+  margin-left: auto;
+  background: #ff6b6b;
+  color: white;
+  border-top-right-radius: 0;
+}
+
+.conv-text {
+  flex: 1;
+}
+
+.conv-text .jp {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.conv-text .en {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Speak button inside bubble */
+.speak-btn {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.speak-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 1);
+}
+/* Speak button inside bubble */
+.speak-btn {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.speak-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Only the button currently speaking changes color */
+.speak-btn.active {
+  background: #ffcc00;
+  color: #000;
+}

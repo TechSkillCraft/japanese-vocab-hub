@@ -1,0 +1,52 @@
+.convlist-container {
+  padding: 20px;
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.convlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.convlist-card {
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.convlist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.convlist-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+}
+
+.convlist-card p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.play-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.play-btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
