@@ -1,24 +1,32 @@
+// import useFetchJSON from "../hooks/useFetchJSON";
+import { Link } from "react-router-dom";
 import useFetchJSON from "../hooks/useFetchJSON";
-import CategoryCard from "../components/CategoryCard";
+
+import { getRandomColor } from "../hooks/randomColer";
+import "../styles/homePage.css";
 
 export default function HomePage() {
-  const { data, loading, error } = useFetchJSON("/data/categoryList.json");
+  const { data, loading, error } = useFetchJSON("/data/categories.json");
 
   if (loading) return <h2>Loading categories…</h2>;
-  if (error) return <h2>Error loading categories</h2>;
+  if (error) return <h2>Error loading categories!</h2>;
+  if (!data || !data.length) return <h2>No categories found</h2>;
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Japanese Vocabulary Categories</h1>
-      <div
-        style={{
-          display: "grid",
-          gap: "20px",
-          gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
-        }}
-      >
+    <div style={{ padding: "32px" }}>
+      <h1>“Small Steps, Big Learning”</h1>
+      <h3>Choose a Category to Start Learning</h3>
+
+      <div className="category-grid">
         {data.map((cat) => (
-          <CategoryCard key={cat.id} category={cat} />
+          <Link
+            key={cat.id}
+            to={`/category/${cat.name.toLowerCase()}`}
+            className="category-card"
+            style={{ background: getRandomColor() }}
+          >
+            {cat.name}
+          </Link>
         ))}
       </div>
     </div>

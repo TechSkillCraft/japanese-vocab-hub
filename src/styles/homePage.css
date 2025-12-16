@@ -1,0 +1,40 @@
+/* Grid container */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+/* Category card */
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+
+  border-radius: 16px;
+  text-decoration: none;
+  color: #222;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.category-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .category-card {
+    font-size: 18px;
+    min-height: 96px;
+  }
+}

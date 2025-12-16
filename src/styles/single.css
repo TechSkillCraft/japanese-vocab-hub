@@ -1,0 +1,45 @@
+/* Single view layout */
+.single-wrapper {
+  display: flex;
+  flex-direction: column; /* 🔑 force vertical layout */
+  align-items: center;
+  gap: 14px; /* space between heading & card */
+  padding: 20px;
+}
+
+.single-card {
+  width: 420px;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  color: #111;
+}
+
+.single-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+.single-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.single-card {
+  max-width: 400px; /* limit width of all single cards */
+  width: 100%; /* responsive */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}

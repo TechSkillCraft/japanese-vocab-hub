@@ -1,0 +1,213 @@
+/* ===== PAGE WRAPPER ===== */
+.about-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* ===== CHANNEL INTRO ===== */
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.channel-logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 18px;
+}
+
+.channel-name {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.channel-description {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.about-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Space between buttons */
+  flex-wrap: wrap;
+  margin-bottom: 60px; /* Space after buttons */
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Subscribe Button - Modern Gradient */
+.btn-primary {
+  background: linear-gradient(135deg, #ff3c3c, #e60000);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(230, 0, 0, 0.35);
+}
+
+/* Community Button */
+.btn-secondary {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  border: 2px solid var(--text);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: var(--text);
+  color: var(--bg);
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+/* ===== PLAYLIST GRID ===== */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+/* Playlist cards are styled in playlistcard.css */
+
+/* ===== COMMUNITY SECTION ===== */
+.community-section {
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.community-text {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 26px;
+}
+
+/* Container for buttons */
+.community-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px; /* space between buttons */
+}
+
+/* Buttons */
+.community-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 22px;
+  border-radius: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.community-card:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* YouTube Community Button */
+.community-card.youtube {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.community-card.youtube:hover {
+  box-shadow: 0 14px 35px rgba(30, 136, 229, 0.4);
+}
+
+/* Email Button */
+.community-card.email {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.community-card.email:hover {
+  box-shadow: 0 14px 35px rgba(76, 175, 80, 0.4);
+}
+
+/* Arrow */
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.community-card:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* ===== DARK MODE ===== */
+.dark .about-page {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+.dark .community-card {
+  box-shadow: 0 14px 35px rgba(30, 136, 229, 0.55);
+}
+
+.dark .community-card.email {
+  box-shadow: 0 14px 35px rgba(76, 175, 80, 0.55);
+}
+
+.dark .btn-secondary {
+  border-color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+.dark .btn-secondary:hover {
+  color: #121212;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .channel-name {
+    font-size: 28px;
+  }
+
+  .channel-description {
+    font-size: 16px;
+  }
+
+  .community-text {
+    font-size: 15px;
+  }
+}

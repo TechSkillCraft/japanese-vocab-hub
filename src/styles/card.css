@@ -1,0 +1,330 @@
+/* Whole vocab reader page */
+.vocab-reader-container {
+  padding: 24px 32px;
+  min-height: 100vh;
+}
+
+/* Root card */
+.card-root {
+  max-width: 100%;
+  border: 2px solid #ddd; /* light grey border */
+  border-radius: 16px; /* rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+  background: #fff; /* card background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hover effect */
+.card-root:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  border-color: #aaa; /* slightly darker border on hover */
+}
+
+/* Grid wrapper container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px; /* spacing between cards */
+  justify-content: center; /* center cards in container */
+  padding: 10px 0;
+}
+
+/* Image wrapper */
+.card-img-wrap {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee; /* subtle line between image and text */
+}
+
+/* Overlay text for English/Hindi */
+.card-en-overlay,
+.card-hi-overlay {
+  position: absolute;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* English overlay */
+.card-en-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hindi overlay */
+.card-hi-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔑 If Hindi is NOT present, move English to right */
+.card-img-wrap:not(:has(.card-hi-overlay)) .card-en-overlay {
+  left: auto;
+  right: 12px;
+}
+
+/* Audio button */
+.card-audio-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid vs Single styles */
+.card-root.grid {
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+.card-root.single {
+  background: #ffffff46;
+  color: #111;
+}
+
+/* Hover effect for grid cards */
+.card-root.grid:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image wrapper */
+.card-img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+}
+.card-img-wrap img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  aspect-ratio: 1 / 1; /* ✅ keeps square */
+  padding: 12px; /* ✅ real padding from all sides */
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.card-img-wrap img:hover {
+  transform: scale(1.05);
+}
+
+/* Audio button */
+.card-audio-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff36;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.card-audio-btn:hover {
+  transform: scale(1.1);
+  background: #dcb3f254;
+}
+
+/* Body */
+.card-body {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+/* Japanese + Hiragana row */
+.card-jp-hiragana-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.card-jp {
+  font-size: 22px;
+  font-weight: 800;
+}
+.card-hiragana {
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Romaji */
+.card-romaji {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Grid container */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 16px 0;
+}
+
+/* Light / Dark theme overrides */
+.light .card-root {
+  color: #111;
+}
+.light .card-en-overlay,
+.light .card-hi-overlay {
+  color: #000;
+  text-shadow: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.dark .card-root {
+  color: #d4eef8;
+}
+.dark .card-en-overlay,
+.dark .card-hi-overlay {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Container padding */
+.vocab-reader-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styled dropdown */
+.vocab-view-dropdown {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #eeebeb;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vocab-view-dropdown:hover {
+  border-color: #908b8b;
+}
+
+.vocab-view-dropdown:focus {
+  outline: none;
+  border-color: #181717;
+  background-color: rgb(232, 244, 249);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive spacing for Grid and Table */
+.cards-grid {
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.word-table {
+  margin-top: 18px;
+}
+/* Header: dropdown on right */
+.vocab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Dropdown style */
+.vocab-view-dropdown {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #464040;
+  background-color: #e1dede;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vocab-view-dropdown:hover {
+  border-color: #a09b9b;
+}
+
+.vocab-view-dropdown:focus {
+  outline: none;
+  border-color: #817e7e;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Main container padding */
+.vocab-reader-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Wrapper ensures consistent square/rectangular box */
+.card-img-wrap {
+  position: relative;
+  width: 260px; /* fixed width */
+  height: 260px; /* fixed height */
+  border-radius: 16px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0; /* optional placeholder bg */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Image itself scales correctly without distortion */
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #ffffff64;
+}
+
+/* Optional: responsive for mobile */
+@media (max-width: 600px) {
+  .vocab-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

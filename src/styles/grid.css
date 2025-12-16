@@ -1,0 +1,63 @@
+/* Grid container — ALWAYS 3 cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔑 FIX */
+  gap: 22px;
+  align-items: start;
+  padding: 15px 8px;
+}
+
+/* Card should follow grid cell size */
+.cards-grid .card-root.grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Image wrapper fills card width */
+.cards-grid .card-root.grid .card-img-wrap {
+  width: 100%;
+  min-height: 260px; /* 🔑 instead of aspect-ratio */
+
+  padding: 16px;
+  margin-top: 12px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+/* Image fits fully — NO CROPPING */
+.cards-grid .card-root.grid .card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Audio button stays INSIDE image */
+.cards-grid .card-root.grid .card-audio-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 export default function Navbar({ theme, toggleTheme }) {
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>日本語 Vocabulary</h2>
+      <h2 style={styles.logo}>Welcome In Japanese Vocab Hub</h2>
 
       <div style={styles.links}>
         <Link to="/">Home</Link>
-        <Link to="/convList">Conversations</Link>
         <Link to="/about">About</Link>
 
         <button onClick={toggleTheme} style={styles.themeBtn}>
@@ -25,7 +24,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    borderBottom: "1px solid #ddd",
+    borderBottom: "1px solid #e7f7fdff",
     background: "var(--bg)",
     color: "var(--text)",
     position: "sticky",

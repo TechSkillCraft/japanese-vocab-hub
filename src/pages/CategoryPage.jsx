@@ -1,23 +1,60 @@
-import { data, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useFetchJSON from "../hooks/useFetchJSON";
-import WordCard from "./WordCard";
-import "../styles/wordcard.css";
+import { getRandomColor } from "../hooks/randomColer";
+import "../styles/categoryPage.css";
 
 export default function CategoryPage() {
-  const { categoryName } = useParams();
-  const { data, loading, error } = useFetchJSON(
-    `/data/${categoryName}/${categoryName}.json`
+  const { category } = useParams();
+  const navigate = useNavigate();
+
+  // Fetch all categories
+  const {
+    data: allCategories,
+    loading: loadingCategories,
+    error: errorCategories,
+  } = useFetchJSON("/data/categories.json");
+
+  // Find current category
+  const categoryObj = allCategories?.find(
+    (c) => c.name.toLowerCase() === category.toLowerCase()
   );
 
-  if (loading) return <h2>Loading words…</h2>;
-  if (error) return <h2>Error loading data</h2>;
+  // Fetch subcategories
+  const {
+    data: subcategories,
+    loading: loadingSubcats,
+    error: errorSubcats,
+  } = useFetchJSON(
+    categoryObj
+      ? `/data/${categoryObj.folder}/${categoryObj.folder}.json`
+      : null
+  );
+
+  if (loadingCategories) return <h2>Loading categories…</h2>;
+  if (errorCategories) return <h2>Error loading categories</h2>;
+  if (!categoryObj) return <h2>Category not found</h2>;
+
+  if (loadingSubcats) return <h2>Loading subcategories…</h2>;
+  if (errorSubcats) return <h2>Error loading subcategories</h2>;
 
   return (
-    <div style={{ padding: "22px" }}>
-      <h1>{categoryName.toUpperCase()}</h1>
-      <div className="grid-container">
-        {data.map((item) => (
-          <WordCard key={item.id} item={item} />
+    <div style={{ padding: "32px" }}>
+      <h1>“Start Learning {categoryObj.name.toUpperCase()}”</h1>
+      <h3>Pick a Subcategory to Begin</h3>
+      <div className="subcategory-grid">
+        {subcategories?.map((sub) => (
+          <div
+            key={sub.id}
+            className="sub-category-card"
+            style={{
+              background: getRandomColor(),
+            }}
+            onClick={() =>
+              navigate(`/category/${category}/${sub.folder ?? sub.name}`)
+            }
+          >
+            {sub.label ?? sub.name}
+          </div>
         ))}
       </div>
     </div>

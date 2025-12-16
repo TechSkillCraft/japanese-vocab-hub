@@ -1,0 +1,44 @@
+.word-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.word-table th,
+.word-table td {
+  padding: 8px;
+  border: 1px solid #eee;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+/* 🔑 prevent wide image column */
+.word-table td.image-col {
+  width: 70px;
+}
+
+.table-img {
+  width: 70px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+/* Audio button */
+.card-audio-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff36;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.card-audio-btn:hover {
+  transform: scale(1.1);
+  background: #dcb3f254;
+}
