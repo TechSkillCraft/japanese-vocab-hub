@@ -42,3 +42,17 @@ a {
 button {
   cursor: pointer;
 }
+.empty-state {
+  min-height: 70vh; /* pushes content to center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty-state p {
+  font-size: 1.3rem; /* text size */
+  font-weight: 600; /* semi-bold */
+  color: var(--text); /* respects light/dark theme */
+  opacity: 0.8;
+}

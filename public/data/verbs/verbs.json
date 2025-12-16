@@ -1,5 +1,1 @@
-[
-  { "id": 1, "name": "polite_forms", "folder": "polite_forms" },
-  { "id": 2, "name": "forms", "folder": "people_emotions" },
-  { "id": 3, "name": "masho form", "folder": "nature" }
-]
+[{ "id": 1, "name": "polite_forms", "folder": "polite_forms" }]

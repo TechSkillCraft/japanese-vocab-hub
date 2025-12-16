@@ -4,6 +4,8 @@ import { getRandomColor } from "../hooks/randomColer";
 
 import "../styles/card.css";
 import "../styles/single.css";
+import "../styles/grid.css";
+
 import "../styles/table.css";
 
 export default function VocabReader({ category, subcategory }) {
@@ -15,7 +17,13 @@ export default function VocabReader({ category, subcategory }) {
   const [index, setIndex] = useState(0);
 
   if (loading) return <div>Loading…</div>;
-  if (error) return <div>Error</div>;
+  if (error) {
+    return (
+      <div className="empty-state">
+        <p>📌 Data will be added soon</p>
+      </div>
+    );
+  }
   if (!data.length) return <div>No data found</div>;
 
   /* Flatten all words for SINGLE view */

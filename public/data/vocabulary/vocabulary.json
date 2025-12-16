@@ -1,11 +1,4 @@
 [
-  { "id": 1, "name": "weather", "folder": "weather" },
-  { "id": 2, "name": "People & Emotions", "folder": "people_emotions" },
-  { "id": 3, "name": "Nature & Environment", "folder": "nature" },
-  { "id": 4, "name": "Food", "folder": "food" },
-  { "id": 5, "name": "Places", "folder": "places" },
-  { "id": 6, "name": "Travel & Transport", "folder": "travel" },
-  { "id": 7, "name": "Shopping & Money", "folder": "shopping" },
-  { "id": 8, "name": "Work & Study", "folder": "work_study" },
-  { "id": 9, "name": "Daily Life", "folder": "daily_life" }
+  { "id": 1, "name": "Weather", "folder": "weather" },
+  { "id": 2, "name": "Famoly", "folder": "family" }
 ]

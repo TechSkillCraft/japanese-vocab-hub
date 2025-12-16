@@ -6,7 +6,7 @@
 
 /* Root card */
 .card-root {
-  max-width: 100%;
+  max-width: 90%;
   border: 2px solid #ddd; /* light grey border */
   border-radius: 16px; /* rounded corners */
   overflow: hidden;

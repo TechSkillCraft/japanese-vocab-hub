@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import useFetchJSON from "../hooks/useFetchJSON";
 import { getRandomColor } from "../hooks/randomColer";
 import "../styles/categoryPage.css";
@@ -7,19 +8,15 @@ export default function CategoryPage() {
   const { category } = useParams();
   const navigate = useNavigate();
 
-  // Fetch all categories
   const {
     data: allCategories,
     loading: loadingCategories,
     error: errorCategories,
   } = useFetchJSON("/data/categories.json");
-
-  // Find current category
   const categoryObj = allCategories?.find(
     (c) => c.name.toLowerCase() === category.toLowerCase()
   );
 
-  // Fetch subcategories
   const {
     data: subcategories,
     loading: loadingSubcats,
@@ -39,6 +36,36 @@ export default function CategoryPage() {
 
   return (
     <div style={{ padding: "32px" }}>
+      <Helmet>
+        <title>Learn {categoryObj.name} | Japanese Vocab Hub</title>
+        <meta
+          name="description"
+          content={`Start learning ${categoryObj.name} in Japanese. Explore subcategories and build your vocabulary and confidence.`}
+        />
+        <meta
+          name="keywords"
+          content={`Japanese ${categoryObj.name}, learn Japanese, ${categoryObj.name} vocabulary, language learning`}
+        />
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content={`Learn ${categoryObj.name} | Japanese Vocab Hub`}
+        />
+        <meta
+          property="og:description"
+          content={`Start learning ${categoryObj.name} in Japanese. Explore subcategories and build your vocabulary and confidence.`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://yourwebsite.com/category/${category}`}
+        />
+        <meta
+          property="og:image"
+          content={`https://yourwebsite.com/images/${categoryObj.folder}-share.png`}
+        />
+      </Helmet>
+
       <h1>“Start Learning {categoryObj.name.toUpperCase()}”</h1>
       <h3>Pick a Subcategory to Begin</h3>
       <div className="subcategory-grid">
@@ -46,9 +73,7 @@ export default function CategoryPage() {
           <div
             key={sub.id}
             className="sub-category-card"
-            style={{
-              background: getRandomColor(),
-            }}
+            style={{ background: getRandomColor() }}
             onClick={() =>
               navigate(`/category/${category}/${sub.folder ?? sub.name}`)
             }

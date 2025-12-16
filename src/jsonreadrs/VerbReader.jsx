@@ -4,6 +4,8 @@ import { getRandomColor } from "../hooks/randomColer";
 
 import "../styles/card.css";
 import "../styles/single.css";
+import "../styles/grid.css";
+
 import "../styles/table.css";
 
 export default function VerbReader({ subcategory }) {
@@ -16,7 +18,13 @@ export default function VerbReader({ subcategory }) {
   const [index, setIndex] = useState(0);
 
   if (loading) return <div>Loading…</div>;
-  if (error) return <div>Error loading verbs</div>;
+  if (error) {
+    return (
+      <div className="empty-state">
+        <p>📌 Data will be added soon</p>
+      </div>
+    );
+  }
   if (!data || !data.length) return <div>No data found</div>;
 
   const base = import.meta.env.BASE_URL; // "/japanese-vocab-hub/"

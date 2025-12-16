@@ -1,44 +1,51 @@
-// Navbar.jsx
-import { Link } from "react-router-dom";
+import "../styles/navbar.css"; // Import the CSS file
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar({ theme, toggleTheme }) {
-  return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>Welcome In Japanese Vocab Hub</h2>
+  const navigate = useNavigate();
+  const location = useLocation();
 
-      <div style={styles.links}>
+  // Show back button only if not on homepage
+  const showBackButton = location.pathname !== "/";
+
+  const handleBack = () => {
+    if (window.history.state && window.history.state.idx > 0) {
+      navigate(-1); // Go back in history
+    } else {
+      navigate("/"); // Fallback to homepage
+    }
+  };
+
+  return (
+    <nav className="navbar">
+      <div className={`navbar-left ${showBackButton ? "has-back-btn" : ""}`}>
+        {showBackButton && (
+          <button
+            className="back-btn"
+            onClick={handleBack}
+            aria-label="Go back"
+          >
+            ⬅️
+          </button>
+        )}
+
+        <img
+          src={`${import.meta.env.BASE_URL}images/logo.png`}
+          alt="Japanese Vocab Hub"
+          className="navbar-logo"
+        />
+
+        <span className="logo-text">Japanese Vocab Hub</span>
+      </div>
+
+      <div className="navbar-right">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
 
-        <button onClick={toggleTheme} style={styles.themeBtn}>
+        <button className="theme-btn" onClick={toggleTheme}>
           {theme === "light" ? "🌙 Dark" : "☀️ Light"}
         </button>
       </div>
     </nav>
   );
 }
-
-const styles = {
-  nav: {
-    padding: "15px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottom: "1px solid #e7f7fdff",
-    background: "var(--bg)",
-    color: "var(--text)",
-    position: "sticky",
-    top: 0,
-    zIndex: 100,
-  },
-  logo: { margin: 0 },
-  links: { display: "flex", gap: "20px", alignItems: "center" },
-  themeBtn: {
-    padding: "6px 12px",
-    borderRadius: "6px",
-    cursor: "pointer",
-    border: "none",
-    background: "var(--btn-bg)",
-    color: "var(--btn-text)",
-  },
-};

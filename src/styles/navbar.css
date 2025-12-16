@@ -1,23 +1,86 @@
 .navbar {
+  padding: 10px 16px;
   display: flex;
   justify-content: space-between;
-  background: #222;
-  padding: 14px 20px;
-  color: #fff;
   align-items: center;
+  border-bottom: 1px solid #e7f7fdff;
+  background: var(--bg);
+  color: var(--text);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: bold;
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.nav-links a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #ddd;
+/* Logo + Back button */
+.back-btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: 2px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.nav-links a:hover {
+.navbar-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Navbar right: links + theme button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap; /* keep on one line */
+}
+
+/* Theme button */
+.theme-btn {
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.theme-btn:hover {
+  background: #1e88e5;
   color: #fff;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbar-left {
+    gap: 6px;
+  }
+
+  .back-btn {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+
+  .navbar-right {
+    gap: 6px;
+  }
 }

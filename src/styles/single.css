@@ -8,7 +8,7 @@
 }
 
 .single-card {
-  width: 420px;
+  width: 300px;
   border-radius: 16px;
   padding: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -26,8 +26,9 @@
   padding: 8px 14px;
   border-radius: 10px;
   border: none;
-  background: #111;
+  background: #313030;
   color: white;
+  font-weight: 600;
   cursor: pointer;
 }
 .single-wrapper {
