@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "jp": "こんにちは、元気ですか？",
+    "en": "Hello, how are you?"
+  },
+  {
+    "id": 2,
+    "jp": "はい、元気です。あなたは？",
+    "en": "Yes, I’m good. And you?"
+  },
+  {
+    "id": 3,
+    "jp": "私も元気です。ありがとう。",
+    "en": "I’m good too. Thank you."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "jp": "おはようございます",
+    "romaji": "ohayou gozaimasu",
+    "en": "Good morning",
+    "image": "/images/phrases/morning.jpg"
+  },
+  {
+    "id": 2,
+    "jp": "ありがとうございます",
+    "romaji": "arigatou gozaimasu",
+    "en": "Thank you",
+    "image": "/images/phrases/thankyou.jpg"
+  },
+  {
+    "id": 3,
+    "jp": "すみません",
+    "romaji": "sumimasen",
+    "en": "Excuse me / Sorry",
+    "image": "/images/phrases/sorry.jpg"
+  }
+]

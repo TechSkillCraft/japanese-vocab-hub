@@ -1,0 +1,605 @@
+[
+  {
+    "id": 1,
+    "jp": "たべる",
+    "masu": "たべます",
+    "romaji_jp": "taberu",
+    "romaji_masu": "tabemasu",
+    "en": "eat",
+    "image": "/images/verbs/polite_forms/1_eat.png"
+  },
+  {
+    "id": 2,
+    "jp": "のむ",
+    "masu": "のみます",
+    "romaji_jp": "nomu",
+    "romaji_masu": "nomimasu",
+    "en": "drink",
+    "image": "/images/verbs/polite_forms/2_drink.png"
+  },
+  {
+    "id": 3,
+    "jp": "よむ",
+    "masu": "よみます",
+    "romaji_jp": "yomu",
+    "romaji_masu": "yomimasu",
+    "en": "read",
+    "image": "/images/verbs/polite_forms/3_read.png"
+  },
+  {
+    "id": 4,
+    "jp": "かく",
+    "masu": "かきます",
+    "romaji_jp": "kaku",
+    "romaji_masu": "kakimasu",
+    "en": "write",
+    "image": "/images/verbs/polite_forms/4_write.png"
+  },
+  {
+    "id": 5,
+    "jp": "はなす",
+    "masu": "はなします",
+    "romaji_jp": "hanasu",
+    "romaji_masu": "hanashimasu",
+    "en": "speak",
+    "image": "/images/verbs/polite_forms/5_speak.png"
+  },
+  {
+    "id": 6,
+    "jp": "きく",
+    "masu": "ききます",
+    "romaji_jp": "kiku",
+    "romaji_masu": "kikimasu",
+    "en": "listen",
+    "image": "/images/verbs/polite_forms/6_listen.png"
+  },
+  {
+    "id": 7,
+    "jp": "みる",
+    "masu": "みます",
+    "romaji_jp": "miru",
+    "romaji_masu": "mimasu",
+    "en": "watch",
+    "image": "/images/verbs/polite_forms/7_watch.png"
+  },
+  {
+    "id": 8,
+    "jp": "ねる",
+    "masu": "ねます",
+    "romaji_jp": "neru",
+    "romaji_masu": "nemasu",
+    "en": "sleep",
+    "image": "/images/verbs/polite_forms/8_sleep.png"
+  },
+  {
+    "id": 9,
+    "jp": "おきる",
+    "masu": "おきます",
+    "romaji_jp": "okiru",
+    "romaji_masu": "okimasu",
+    "en": "get up",
+    "image": "/images/verbs/polite_forms/9_getup.png"
+  },
+  {
+    "id": 10,
+    "jp": "かう",
+    "masu": "かいます",
+    "romaji_jp": "kau",
+    "romaji_masu": "kaimasu",
+    "en": "buy",
+    "image": "/images/verbs/polite_forms/10_buy.png"
+  },
+  {
+    "id": 11,
+    "jp": "とる",
+    "masu": "とります",
+    "romaji_jp": "toru",
+    "romaji_masu": "torimasu",
+    "en": "take (picture)",
+    "image": "/images/verbs/polite_forms/11_takePicture.png"
+  },
+  {
+    "id": 12,
+    "jp": "おくる",
+    "masu": "おくります",
+    "romaji_jp": "okuru",
+    "romaji_masu": "okurimasu",
+    "en": "send",
+    "image": "/images/verbs/polite_forms/12_send.png"
+  },
+  {
+    "id": 13,
+    "jp": "はたらく",
+    "masu": "はたらきます",
+    "romaji_jp": "hataraku",
+    "romaji_masu": "hatarakimasu",
+    "en": "work",
+    "image": "/images/verbs/polite_forms/13_work.png"
+  },
+  {
+    "id": 14,
+    "jp": "なくす",
+    "masu": "なくします",
+    "romaji_jp": "nakusu",
+    "romaji_masu": "nakushimasu",
+    "en": "lose",
+    "image": "/images/verbs/polite_forms/14_loose.png"
+  },
+  {
+    "id": 15,
+    "jp": "みつける",
+    "masu": "みつけます",
+    "romaji_jp": "mitsukeru",
+    "romaji_masu": "mitsukemasu",
+    "en": "find",
+    "image": "/images/verbs/polite_forms/15_find.png"
+  },
+  {
+    "id": 16,
+    "jp": "しらべる",
+    "masu": "しらべます",
+    "romaji_jp": "shiraberu",
+    "romaji_masu": "shirabemasu",
+    "en": "search",
+    "image": "/images/verbs/polite_forms/16_search.png"
+  },
+  {
+    "id": 17,
+    "jp": "はらう",
+    "masu": "はらいます",
+    "romaji_jp": "harau",
+    "romaji_masu": "haraimasu",
+    "en": "pay",
+    "image": "/images/verbs/polite_forms/17_pay.png"
+  },
+  {
+    "id": 18,
+    "jp": "かんがえる",
+    "masu": "かんがえます",
+    "romaji_jp": "kangaeru",
+    "romaji_masu": "kangaemasu",
+    "en": "think",
+    "image": "/images/verbs/polite_forms/18_think.png"
+  },
+  {
+    "id": 19,
+    "jp": "あらう",
+    "masu": "あらいます",
+    "romaji_jp": "arau",
+    "romaji_masu": "araimasu",
+    "en": "wash",
+    "image": "/images/verbs/polite_forms/19_wash.png"
+  },
+  {
+    "id": 20,
+    "jp": "およぐ",
+    "masu": "およぎます",
+    "romaji_jp": "oyogu",
+    "romaji_masu": "oyogimasu",
+    "en": "swim",
+    "image": "/images/verbs/polite_forms/20_swim.png"
+  },
+  {
+    "id": 21,
+    "jp": "みせる",
+    "masu": "みせます",
+    "romaji_jp": "miseru",
+    "romaji_masu": "misemasu",
+    "en": "show",
+    "image": "/images/verbs/polite_forms/21_show.png"
+  },
+  {
+    "id": 22,
+    "jp": "うたう",
+    "masu": "うたいます",
+    "romaji_jp": "utau",
+    "romaji_masu": "utaimasu",
+    "en": "sing",
+    "image": "/images/verbs/polite_forms/22_sing.png"
+  },
+  {
+    "id": 23,
+    "jp": "あびる",
+    "masu": "あびます",
+    "romaji_jp": "abiru",
+    "romaji_masu": "abimasu",
+    "en": "shower",
+    "image": "/images/verbs/polite_forms/23_shower.png"
+  },
+  {
+    "id": 24,
+    "jp": "はいる",
+    "masu": "はいります",
+    "romaji_jp": "hairu",
+    "romaji_masu": "hairimasu",
+    "en": "take bath",
+    "image": "/images/verbs/polite_forms/24_bath.png"
+  },
+  {
+    "id": 25,
+    "jp": "すう",
+    "masu": "すいます",
+    "romaji_jp": "suu",
+    "romaji_masu": "suimasu",
+    "en": "smoke",
+    "image": "/images/verbs/polite_forms/25_smoke.png"
+  },
+  {
+    "id": 26,
+    "jp": "いく",
+    "masu": "いきます",
+    "romaji_jp": "iku",
+    "romaji_masu": "ikimasu",
+    "en": "go",
+    "image": "/images/verbs/polite_forms/26_go.png"
+  },
+  {
+    "id": 27,
+    "jp": "くる",
+    "masu": "きます",
+    "romaji_jp": "kuru",
+    "romaji_masu": "kimasu",
+    "en": "come",
+    "image": "/images/verbs/polite_forms/27_come.png"
+  },
+  {
+    "id": 28,
+    "jp": "かえる",
+    "masu": "かえります",
+    "romaji_jp": "kaeru",
+    "romaji_masu": "kaerimasu",
+    "en": "go home",
+    "image": "/images/verbs/polite_forms/28_gohome.png"
+  },
+  {
+    "id": 29,
+    "jp": "うる",
+    "masu": "うります",
+    "romaji_jp": "uru",
+    "romaji_masu": "urimasu",
+    "en": "sell",
+    "image": "/images/verbs/polite_forms/29_sell.png"
+  },
+  {
+    "id": 30,
+    "jp": "あげる",
+    "masu": "あげます",
+    "romaji_jp": "ageru",
+    "romaji_masu": "agemasu",
+    "en": "give",
+    "image": "/images/verbs/polite_forms/30_give.png"
+  },
+  {
+    "id": 31,
+    "jp": "もらう",
+    "masu": "もらいます",
+    "romaji_jp": "morau",
+    "romaji_masu": "moraimasu",
+    "en": "get",
+    "image": "/images/verbs/polite_forms/31_get.png"
+  },
+  {
+    "id": 32,
+    "jp": "かりる",
+    "masu": "かります",
+    "romaji_jp": "kariru",
+    "romaji_masu": "karimasu",
+    "en": "borrow",
+    "image": "/images/verbs/polite_forms/32_borrow.png"
+  },
+  {
+    "id": 33,
+    "jp": "かす",
+    "masu": "かします",
+    "romaji_jp": "kasu",
+    "romaji_masu": "kashimasu",
+    "en": "lend",
+    "image": "/images/verbs/polite_forms/33_lend.png"
+  },
+  {
+    "id": 34,
+    "jp": "おしえる",
+    "masu": "おしえます",
+    "romaji_jp": "oshieru",
+    "romaji_masu": "oshiemasu",
+    "en": "teach",
+    "image": "/images/verbs/polite_forms/34_teach.png"
+  },
+  {
+    "id": 35,
+    "jp": "ならう",
+    "masu": "ならいます",
+    "romaji_jp": "narau",
+    "romaji_masu": "naraimasu",
+    "en": "learn",
+    "image": "/images/verbs/polite_forms/35_learn.png"
+  },
+  {
+    "id": 36,
+    "jp": "いる",
+    "masu": "います",
+    "romaji_jp": "iru",
+    "romaji_masu": "imasu",
+    "en": "be (human/animal)",
+    "image": "/images/verbs/polite_forms/36_be_human.png"
+  },
+  {
+    "id": 37,
+    "jp": "ある",
+    "masu": "あります",
+    "romaji_jp": "aru",
+    "romaji_masu": "arimasu",
+    "en": "be (things)",
+    "image": "/images/verbs/polite_forms/37_be_things.png"
+  },
+  {
+    "id": 38,
+    "jp": "わかる",
+    "masu": "わかります",
+    "romaji_jp": "wakaru",
+    "romaji_masu": "wakarimasu",
+    "en": "understand",
+    "image": "/images/verbs/polite_forms/38_understand.png"
+  },
+  {
+    "id": 39,
+    "jp": "やすむ",
+    "masu": "やすみます",
+    "romaji_jp": "yasumu",
+    "romaji_masu": "yasumimasu",
+    "en": "take a break",
+    "image": "/images/verbs/polite_forms/39_take_break.png"
+  },
+  {
+    "id": 40,
+    "jp": "まつ",
+    "masu": "まちます",
+    "romaji_jp": "matsu",
+    "romaji_masu": "machimasu",
+    "en": "wait",
+    "image": "/images/verbs/polite_forms/40_wait.png"
+  },
+  {
+    "id": 41,
+    "jp": "もつ",
+    "masu": "もちます",
+    "romaji_jp": "motsu",
+    "romaji_masu": "mochimasu",
+    "en": "hold",
+    "image": "/images/verbs/polite_forms/41_hold.png"
+  },
+  {
+    "id": 42,
+    "jp": "つける",
+    "masu": "つけます",
+    "romaji_jp": "tsukeru",
+    "romaji_masu": "tsukemasu",
+    "en": "turn on",
+    "image": "/images/verbs/polite_forms/42_turn_on.png"
+  },
+  {
+    "id": 43,
+    "jp": "けす",
+    "masu": "けします",
+    "romaji_jp": "kesu",
+    "romaji_masu": "keshimasu",
+    "en": "turn off",
+    "image": "/images/verbs/polite_forms/43_turn_off.png"
+  },
+  {
+    "id": 44,
+    "jp": "あける",
+    "masu": "あけます",
+    "romaji_jp": "akeru",
+    "romaji_masu": "akemasu",
+    "en": "open",
+    "image": "/images/verbs/polite_forms/44_open.png"
+  },
+  {
+    "id": 45,
+    "jp": "しめる",
+    "masu": "しめます",
+    "romaji_jp": "shimeru",
+    "romaji_masu": "shimemasu",
+    "en": "close",
+    "image": "/images/verbs/polite_forms/45_close.png"
+  },
+  {
+    "id": 46,
+    "jp": "すわる",
+    "masu": "すわります",
+    "romaji_jp": "suwaru",
+    "romaji_masu": "suwarimasu",
+    "en": "sit",
+    "image": "/images/verbs/polite_forms/46_sit.png"
+  },
+  {
+    "id": 47,
+    "jp": "たつ",
+    "masu": "たちます",
+    "romaji_jp": "tatsu",
+    "romaji_masu": "tachimasu",
+    "en": "stand",
+    "image": "/images/verbs/polite_forms/47_stand.png"
+  },
+  {
+    "id": 48,
+    "jp": "てつだう",
+    "masu": "てつだいます",
+    "romaji_jp": "tetsudau",
+    "romaji_masu": "tetsudaimasu",
+    "en": "help",
+    "image": "/images/verbs/polite_forms/48_help.png"
+  },
+  {
+    "id": 49,
+    "jp": "でる",
+    "masu": "でます",
+    "romaji_jp": "deru",
+    "romaji_masu": "demasu",
+    "en": "leave (a place)",
+    "image": "/images/verbs/polite_forms/49_leave.png"
+  },
+  {
+    "id": 50,
+    "jp": "つかう",
+    "masu": "つかいます",
+    "romaji_jp": "tsukau",
+    "romaji_masu": "tsukaimasu",
+    "en": "use",
+    "image": "/images/verbs/polite_forms/50_use.png"
+  },
+  {
+    "id": 51,
+    "jp": "つくる",
+    "masu": "つくります",
+    "romaji_jp": "tsukuru",
+    "romaji_masu": "tsukurimasu",
+    "en": "make",
+    "image": "/images/verbs/polite_forms/51_make.png"
+  },
+  {
+    "id": 52,
+    "jp": "あう",
+    "masu": "あいます",
+    "romaji_jp": "au",
+    "romaji_masu": "aimasu",
+    "en": "see / meet",
+    "image": "/images/verbs/polite_forms/52_see.png"
+  },
+  {
+    "id": 53,
+    "jp": "おぼえる",
+    "masu": "おぼえます",
+    "romaji_jp": "oboeru",
+    "romaji_masu": "oboemasu",
+    "en": "remember",
+    "image": "/images/verbs/polite_forms/53_remember.png"
+  },
+  {
+    "id": 54,
+    "jp": "わすれる",
+    "masu": "わすれます",
+    "romaji_jp": "wasureru",
+    "romaji_masu": "wasuremasu",
+    "en": "forget",
+    "image": "/images/verbs/polite_forms/54_forget.png"
+  },
+  {
+    "id": 55,
+    "jp": "すむ",
+    "masu": "すみます",
+    "romaji_jp": "sumu",
+    "romaji_masu": "sumimasu",
+    "en": "live",
+    "image": "/images/verbs/polite_forms/55_live.png"
+  },
+  {
+    "id": 56,
+    "jp": "すてる",
+    "masu": "すてます",
+    "romaji_jp": "suteru",
+    "romaji_masu": "sutemasu",
+    "en": "throw away",
+    "image": "/images/verbs/polite_forms/56_throw_away.png"
+  },
+  {
+    "id": 57,
+    "jp": "なおす",
+    "masu": "なおします",
+    "romaji_jp": "naosu",
+    "romaji_masu": "naoshimasu",
+    "en": "fix",
+    "image": "/images/verbs/polite_forms/57_fix.png"
+  },
+  {
+    "id": 58,
+    "jp": "べんきょうする",
+    "masu": "べんきょうします",
+    "romaji_jp": "benkyou suru",
+    "romaji_masu": "benkyou shimasu",
+    "en": "study",
+    "image": "/images/verbs/polite_forms/58_study.jpg"
+  },
+  {
+    "id": 59,
+    "jp": "そうじする",
+    "masu": "そうじします",
+    "romaji_jp": "souji suru",
+    "romaji_masu": "souji shimasu",
+    "en": "clean",
+    "image": "/images/verbs/polite_forms/59_clean.png"
+  },
+  {
+    "id": 60,
+    "jp": "けっこんする",
+    "masu": "けっこんします",
+    "romaji_jp": "kekkon suru",
+    "romaji_masu": "kekkon shimasu",
+    "en": "get married",
+    "image": "/images/verbs/polite_forms/60_get_married.png"
+  },
+  {
+    "id": 61,
+    "jp": "でんわする",
+    "masu": "でんわします",
+    "romaji_jp": "denwa suru",
+    "romaji_masu": "denwa shimasu",
+    "en": "call",
+    "image": "/images/verbs/polite_forms/61_call.png"
+  },
+  {
+    "id": 62,
+    "jp": "りょうりする",
+    "masu": "りょうりします",
+    "romaji_jp": "ryouri suru",
+    "romaji_masu": "ryouri shimasu",
+    "en": "cook",
+    "image": "/images/verbs/polite_forms/62_cook.png"
+  },
+  {
+    "id": 63,
+    "jp": "メイクする",
+    "masu": "メイクします",
+    "romaji_jp": "meiku suru",
+    "romaji_masu": "meiku shimasu",
+    "en": "wear makeup",
+    "image": "/images/verbs/polite_forms/63_wear_makeup.png"
+  },
+  {
+    "id": 64,
+    "jp": "ゲームする",
+    "masu": "ゲームします",
+    "romaji_jp": "geemu suru",
+    "romaji_masu": "geemu shimasu",
+    "en": "play (video game)",
+    "image": "/images/verbs/polite_forms/64_play_game.png"
+  },
+  {
+    "id": 65,
+    "jp": "りょこうする",
+    "masu": "りょこうします",
+    "romaji_jp": "ryokou suru",
+    "romaji_masu": "ryokou shimasu",
+    "en": "travel",
+    "image": "/images/verbs/polite_forms/65_travel.png"
+  },
+  {
+    "id": 66,
+    "jp": "うんてんする",
+    "masu": "うんてんします",
+    "romaji_jp": "unten suru",
+    "romaji_masu": "unten shimasu",
+    "en": "drive",
+    "image": "/images/verbs/polite_forms/66_drive.png"
+  },
+  {
+    "id": 67,
+    "jp": "せつめいする",
+    "masu": "せつめいします",
+    "romaji_jp": "setsumei suru",
+    "romaji_masu": "setsumei shimasu",
+    "en": "explain",
+    "image": "/images/verbs/polite_forms/67_explain.png"
+  }
+]
