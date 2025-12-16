@@ -1,11 +1,1 @@
-[
-  { "id": 1, "name": "1", "folder": "1" },
-  { "id": 2, "name": "People ", "folder": "people_emotions" },
-  { "id": 3, "name": "Natu", "folder": "nature" },
-  { "id": 4, "name": "Food & ", "folder": "food" },
-  { "id": 5, "name": "Places", "folder": "places" },
-  { "id": 6, "name": "Travel & ", "folder": "travel" },
-  { "id": 7, "name": "Shopping & ", "folder": "shopping" },
-  { "id": 8, "name": "Work & Study", "folder": "work_study" },
-  { "id": 9, "name": "Daily ", "folder": "daily_life" }
-]
+[]
