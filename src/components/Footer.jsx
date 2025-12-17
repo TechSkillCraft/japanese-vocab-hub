@@ -15,7 +15,7 @@ export default function Footer() {
           />
           <span className="footer-name">Japanese Vocab Hub</span>
           <p className="footer-tagline">
-            Learn Japanese vocabulary step by step 🇯🇵
+            Learn Japanese vocabulary step by step.
           </p>
         </div>
 
